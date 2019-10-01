@@ -1,0 +1,2 @@
+class Nap < ApplicationRecord
+end
