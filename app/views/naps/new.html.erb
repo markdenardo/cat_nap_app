@@ -1,2 +1,9 @@
 <h1>Naps#new</h1>
 <p>Find me in app/views/naps/new.html.erb</p>
+<%= form_for @enrollment do |f|%>
+    <%= f.label :course_id%>
+    <%= f.collection_select :course_id, Course.all, :id, :name%>
+    <%= f.label :student_id%>
+    <%= f.collection_select :student_id, Student.all, :id, :name%>
+    <%= f.submit%>
+<%end%>

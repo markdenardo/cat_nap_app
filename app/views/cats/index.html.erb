@@ -1,2 +1,19 @@
-<h1>Cats#index</h1>
-<p>Find me in app/views/cats/index.html.erb</p>
+<h1>Cat Nap App Cats</h1>
+
+<%#button links to new_cat_path through get method%>
+<%= button_to "Meet a new Cat!", new_cat_path, method: :get %>
+
+<%#ordered list%>
+<ol>
+
+<%#each enumerable method iterates through cat instance%>
+<% @cats.each do |cat|%>
+
+<%#withinthe list of shown cats, there is a link_to each cat show page%>
+<li><%=link_to cat.name, cat_path(cat)%></li>
+
+<%#end of rub method%>
+  <%end%>
+
+<%#closed ordered list tag%>
+</ol>

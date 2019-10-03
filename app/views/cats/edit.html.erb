@@ -1,2 +1,30 @@
-<h1>Cats#edit</h1>
-<p>Find me in app/views/cats/edit.html.erb</p>
+<h1>Cats Grooming Form</h1>
+<ol>
+<%= form_for @cat do |f|%>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :breed %>
+    <%= f.text_field :breed %>
+
+    <%= f.label :chill %>
+    <%= f.number_field :chill %>
+
+    <%= f.label :adopted %> 
+    <%= f.text_field :breed %>
+
+    <%= f.label :adopt%>
+    <%= f.check_box :adopt? %>
+</ol>
+
+<h1>Student Edit Form</h1>
+
+<%= form_for @student do |f|%>
+    <%= f.label :name%>
+    <%= f.text_field :name %>
+    <%= f.label :age%>
+    <%= f.number_field :age %>
+
+    <%= f.submit%>
+<%end%>
+<%end%>

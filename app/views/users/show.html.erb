@@ -1,2 +1,13 @@
 <h1>Users#show</h1>
 <p>Find me in app/views/users/show.html.erb</p>
+<h1><%= @user.name%>'s Page</h1>
+
+<h2>Cats: <%=@user.cats%></h2>
+
+<h2>Courses</h2>
+<%= button_to "Take a Nap", new_nap_path, method: :get%>
+
+<%= button_to "Edit Student", edit_student_path, method: :get%>
+<%= button_to "Delete Account", user_path, method: :delete%>
+
+<%= link_to "Delete Account", user_path%>
